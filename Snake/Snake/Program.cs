@@ -24,8 +24,9 @@ namespace Snake
             RightLine.Draw();
 
             // Случайная точка
-            Point R = new Point(7, 12, '*');
-            R.Draw();
+            Point R = new Point(12, 17, '*');
+            Snake snake = new Snake(R,8,Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }
