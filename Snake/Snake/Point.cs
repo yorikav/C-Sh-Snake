@@ -11,11 +11,11 @@ namespace Snake
         public int x;
         public int y;
         public char sym;
-
+        
         public Point()
         {
         }
-
+        
         public Point(int _x, int _y, char _sym)
         {
             x = _x;
@@ -49,6 +49,12 @@ namespace Snake
             }
         }
 
+        internal void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
@@ -58,7 +64,7 @@ namespace Snake
         public override string ToString()
         {
             return x + ", " + y + ", " + sym;
-        }
-        */
+        } 
+        */   
     }
 }
